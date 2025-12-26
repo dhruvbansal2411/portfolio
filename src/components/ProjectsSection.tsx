@@ -10,7 +10,7 @@ const projects = [
     icon: Layers,
     featured: true,
     links: {
-      github: '#',
+      github: 'https://github.com/dhruvbansal2411',
       live: '#',
     },
   },
@@ -22,7 +22,7 @@ const projects = [
     icon: MessageSquare,
     featured: true,
     links: {
-      github: '#',
+      github: 'https://github.com/dhruvbansal2411',
       live: '#',
     },
   },

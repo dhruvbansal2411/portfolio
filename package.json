@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Personal portfolio website of Dhruv Bansal - Frontend & Full-Stack Developer",
-  "author": "Dhruv Bansal",
-  "homepage": "https://dhruvbansal.dev",
+  "author": "Dhruv Bansal <dhruvbansal2411@gmail.com>",
+  "homepage": "https://github.com/dhruvbansal2411/dhruv-bansal-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

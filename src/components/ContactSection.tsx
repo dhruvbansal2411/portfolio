@@ -7,17 +7,17 @@ const socialLinks = [
   {
     icon: Github,
     label: 'GitHub',
-    href: 'https://github.com/',
+    href: 'https://github.com/dhruvbansal2411',
   },
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/',
+    href: 'https://www.linkedin.com/in/dhruv-bansal-9045b7262/',
   },
   {
     icon: Mail,
     label: 'Email',
-    href: 'mailto:dhruv.bansal@email.com',
+    href: 'mailto:dhruvbansal2411@gmail.com',
   },
 ];
 
@@ -87,10 +87,10 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-display font-semibold text-foreground mb-1">Email</h3>
                 <a
-                  href="mailto:dhruv.bansal@email.com"
+                  href="mailto:dhruvbansal2411@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  dhruv.bansal@email.com
+                  dhruvbansal2411@gmail.com
                 </a>
               </div>
             </div>
@@ -145,7 +145,7 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 rounded-lg bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
-                placeholder="your.email@example.com"
+                placeholder="dhruvbansal2411@gmail.com"
               />
             </div>
 

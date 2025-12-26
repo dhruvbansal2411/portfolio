@@ -105,9 +105,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Dhruv Bansal**
 - Portfolio: [dhruvbansal.dev](https://dhruvbansal.dev)
-- LinkedIn: [linkedin.com/in/dhruvbansal](https://linkedin.com/in/dhruvbansal)
+- LinkedIn: [linkedin.com/in/dhruv-bansal-9045b7262](https://www.linkedin.com/in/dhruv-bansal-9045b7262/)
 - GitHub: [github.com/dhruvbansal2411](https://github.com/dhruvbansal2411)
-- Email: dhruv.bansal@example.com
+- Email: dhruvbansal2411@gmail.com
 
 ---
 
