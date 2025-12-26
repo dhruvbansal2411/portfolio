@@ -1,7 +1,56 @@
-import { ExternalLink, Github, Layers, MessageSquare } from 'lucide-react';
+import { Building2, ExternalLink, Github, GraduationCap, Layers, MessageSquare, ShoppingCart, UtensilsCrossed } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const projects = [
+  {
+    title: 'ERP Hub - Enterprise Resource Planning System',
+    description:
+      'A complete MERN Stack ERP system with JWT authentication, MongoDB database, and Indian Rupee currency support. Features comprehensive modules for inventory management, sales, financial management, HR, and business analytics with GST calculations and Indian business formatting.',
+    tech: ['MongoDB', 'Express.js', 'React 18', 'Node.js', 'TypeScript', 'JWT Auth', 'Tailwind CSS', 'shadcn/ui'],
+    icon: Building2,
+    featured: true,
+    links: {
+      github: 'https://github.com/dhruvbansal2411',
+      live: 'https://project-erp-iota.vercel.app/',
+    },
+  },
+  {
+    title: 'LearnHub India - Online Learning Platform',
+    description:
+      'A modern, responsive online learning platform built with React, featuring a beautiful UI with carefully chosen color palette and comprehensive course management system designed specifically for Indian learners. Includes student dashboard, progress tracking, course detail pages, and Indian pricing in Rupees.',
+    tech: ['React.js', 'Responsive Design', 'UI/UX Design', 'Course Management', 'Progress Tracking', 'Indian Localization'],
+    icon: GraduationCap,
+    featured: true,
+    links: {
+      github: 'https://github.com/dhruvbansal2411',
+      live: 'https://learnhub-green-eight.vercel.app/',
+    },
+  },
+  {
+    title: 'Agro Connect - Farmer Direct Marketplace',
+    description:
+      'Led a team of 4 to develop a Smart India Hackathon project connecting farmers directly with consumers to increase farmer income, reduce food prices, and promote local sourcing. Built a responsive web platform featuring farmer profiles, inventory management, secure payments, consumer reviews, and real-time order tracking using the MERN stack.',
+    tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Payment Gateway', 'Real-time Tracking'],
+    icon: ShoppingCart,
+    featured: true,
+    year: '2024',
+    links: {
+      github: 'https://github.com/dhruvbansal2411',
+      live: 'https://agro-connect-h2hb.vercel.app/',
+    },
+  },
+  {
+    title: 'Online Food Ordering Web App',
+    description:
+      'A comprehensive food ordering system built with PHP and MySQL featuring customer food ordering module, admin dashboard for menu management, order tracking, and user management. Includes secure admin authentication, responsive design, and complete CRUD operations for restaurant management.',
+    tech: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'JavaScript', 'XAMPP'],
+    icon: UtensilsCrossed,
+    featured: true,
+    links: {
+      github: 'https://github.com/dhruvbansal2411',
+      live: 'https://food-order-website-pi-seven.vercel.app/',
+    },
+  },
   {
     title: 'AI-Enhanced Campus Recruitment Portal',
     description:
@@ -23,7 +72,7 @@ const projects = [
     featured: true,
     links: {
       github: 'https://github.com/dhruvbansal2411',
-      live: '#',
+      live: 'https://realtime-chat-app-eight-lilac.vercel.app/',
     },
   },
 ];

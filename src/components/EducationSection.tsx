@@ -1,5 +1,29 @@
 import { Award, GraduationCap } from 'lucide-react';
 
+const educationData = [
+  {
+    degree: 'B.Tech in Computer Science and Information Technology',
+    institution: 'KIET Group of Institutions (Delhi NCR)',
+    period: 'Expected: Jun. 2026',
+    percentage: '80.20%',
+    location: 'Ghaziabad, UP',
+  },
+  {
+    degree: 'Intermediate — CBSE',
+    institution: 'Ivey International School',
+    period: 'July 2021',
+    percentage: '70%',
+    location: 'Delhi',
+  },
+  {
+    degree: 'High School — CBSE',
+    institution: 'Ivey International School',
+    period: 'March 2019',
+    percentage: '82.5%',
+    location: 'Delhi',
+  },
+];
+
 const certifications = [
   {
     title: 'Data Analytics',
@@ -27,19 +51,31 @@ const EducationSection = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Education */}
           <div className="p-8 rounded-2xl bg-card border border-border hover-lift">
             <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
               <GraduationCap className="w-7 h-7 text-primary" />
             </div>
-            <h3 className="font-display text-xl font-bold text-foreground mb-2">
-              B.Tech in Computer Science & IT
+            <h3 className="font-display text-xl font-bold text-foreground mb-6">
+              Education
             </h3>
-            <p className="text-primary font-medium mb-4">KIET Group of Institutions</p>
-            <div className="flex items-center gap-4 text-sm text-muted-foreground">
-              <span className="px-3 py-1 rounded-full bg-secondary">Expected 2026</span>
-              <span>Ghaziabad, UP</span>
+            <div className="space-y-6">
+              {educationData.map((edu, index) => (
+                <div
+                  key={index}
+                  className="p-4 rounded-lg bg-secondary/30 border border-border hover:border-primary/30 transition-colors"
+                >
+                  <h4 className="font-semibold text-foreground mb-1">{edu.degree}</h4>
+                  <p className="text-primary font-medium mb-2">{edu.institution}</p>
+                  <div className="flex items-center justify-between text-sm text-muted-foreground">
+                    <span>{edu.period}</span>
+                    <span className="px-2 py-1 rounded bg-primary/10 text-primary font-medium">
+                      {edu.percentage}
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
