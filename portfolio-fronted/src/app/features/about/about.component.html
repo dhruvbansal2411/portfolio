@@ -1,0 +1,119 @@
+<section class="about" id="about">
+  <div class="about-container">
+    <!-- Section Header -->
+    <div class="section-header" appScrollAnimate="fade-down" [animDuration]="700">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <!-- About Content -->
+    <div class="about-content">
+      <!-- Developer Info Card -->
+      <div class="about-card glass-card" appScrollAnimate="slide-3d-left" [animDuration]="800" [animDelay]="100"
+        appTilt>
+        <div class="about-avatar">
+          <div class="avatar-placeholder">
+            <span class="avatar-initials">{{ getAvatarInitials(developer.name) }}</span>
+          </div>
+        </div>
+        <h3 class="about-name">{{ developer.name }}</h3>
+        <p class="about-role">{{ developer.role }}</p>
+        <p class="about-location">
+          <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          {{ developer.location }}
+        </p>
+      </div>
+
+      <!-- Emoji Floating Showcase Container -->
+      <div class="emoji-showcase glass-card" appScrollAnimate="zoom-in" [animDuration]="800" [animDelay]="150"
+        appFloatingEmojis [autoSpawn]="true" appTilt>
+        <div class="emoji-content">
+          <h3 class="emoji-title">Tech Stack Vibes</h3>
+          <p class="emoji-desc">Hover or click to spawn more!</p>
+        </div>
+      </div>
+      <!--Effect-->
+      <div class="emoji-showcase glass-card" appScrollAnimate="zoom-in" [animDuration]="800" [animDelay]="150"
+        appFloatingEmojis [autoSpawn]="true" appTilt>
+        <div class="emoji-content">
+          <img alt="Coding" src="https://cdn.dribbble.com/users/1440899/screenshots/5286905/browserpreview_tmp-3.gif">
+        </div>
+      </div>
+      <!-- About Text -->
+      <div class="about-text glass-card" appScrollAnimate="slide-3d-right" [animDuration]="800" [animDelay]="200">
+        <h3 class="card-title">Who I Am</h3>
+        <p class="card-description">
+          {{ personalInfo.about }}
+        </p>
+
+        <p class="card-description">
+          Currently pursuing {{ education.degree }} at {{ education.institution }}, 
+          I have gained hands-on experience through internships and personal projects. 
+          I've worked with companies like Proxenix, where I built real-time chat applications 
+          supporting 100+ concurrent users and improved UI responsiveness by 30%.
+        </p>
+
+        <p class="card-description">
+          My technical expertise spans across the full stack - from building responsive 
+          frontends with React and Tailwind CSS to developing robust backends with Node.js 
+          and Flask. I'm passionate about leveraging AI and Machine Learning to solve 
+          real-world problems, as demonstrated in my AI-powered recruitment platform that 
+          achieved 87% matching accuracy.
+        </p>
+
+        <!-- Quick Stats -->
+        <div class="about-stats">
+          <div class="stat-item" appScrollAnimate="zoom-in" [animDelay]="300" [animDuration]="600">
+            <span class="stat-number">{{ education.cgpa }}</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-item" appScrollAnimate="zoom-in" [animDelay]="450" [animDuration]="600">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item" appScrollAnimate="zoom-in" [animDelay]="600" [animDuration]="600">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-item" appScrollAnimate="zoom-in" [animDelay]="600" [animDuration]="600">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Research Publication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="achievements-section">
+      <h3 class="achievements-title" appScrollAnimate="fade-up" [animDelay]="100" [animDuration]="600">Key Achievements
+      </h3>
+      <div class="achievements-grid">
+        <div *ngFor="let achievement of achievements; let i = index" class="achievement-card glass-card"
+          appScrollAnimate="tilt-reveal" [animDelay]="i * 150" [animDuration]="750" appTilt>
+          <div class="achievement-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <h4 class="achievement-title">{{ achievement.title }}</h4>
+          <p class="achievement-description">{{ achievement.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="about-cta" appScrollAnimate="swing-in" [animDelay]="200" [animDuration]="700">
+      <a routerLink="/contact" class="btn btn-primary">
+        <span>Let's Work Together</span>
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
