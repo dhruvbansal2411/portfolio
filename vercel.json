@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "dhruv-portfolio",
+  "buildCommand": "cd portfolio-fronted && npm install && npm run build",
+  "outputDirectory": "portfolio-fronted/dist/portfolio-frontend",
+  "installCommand": "cd portfolio-fronted && npm install",
+  "framework": null,
+  "routes": [
+    {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff|woff2|ttf|eot|webp|pdf))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
