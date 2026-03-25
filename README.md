@@ -15,7 +15,7 @@ I'm Dhruv Bansal, a Computer Science student specializing in Full Stack Developm
 
 ## 🌐 Live Website
 
-Visit my portfolio: **[Add your deployed URL here]**
+Visit my portfolio: **[https://spectacular-belekoy-5c06c5.netlify.app/home]**
 
 ## 🛠️ Tech Stack
 
